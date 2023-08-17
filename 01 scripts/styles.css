@@ -1,6 +1,20 @@
+/* colors
+#03045e
+#023e8a
+#0077b6
+#0096c7
+#00b4d8
+#48cae4
+#90e0ef
+#ade8f4
+#caf0f8
+*/
+
 body {
   margin: 0;
   min-width: 250px;
+  background-color: #1D1E18; /* Light blue color */
+  font-family: 'Open Sans', sans-serif; /* Use the chosen font or fallback to sans-serif */
 }
 
 /* Include the padding and border in an element's total width and height */
@@ -20,7 +34,7 @@ ul li {
   position: relative;
   padding: 12px 8px 12px 40px;
   list-style-type: none;
-  background: #eee;
+  background: #caf0f8;
   font-size: 18px;
   transition: 0.2s;
   
@@ -29,21 +43,28 @@ ul li {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+
+  /* add borders to list items
+  border-width: 2px;
+  border-style: dashed;
+  border-color: black;
+  padding: 10px; /* /* Reduce padding space within the element */
+  margin: 10px; /* Reduce margin space around the element */
 }
 
 /* Set all odd list items to a different color (zebra-stripes) */
 ul li:nth-child(odd) {
-  background: #f9f9f9;
+  background: #caf0f8;
 }
 
 /* Darker background-color on hover */
 ul li:hover {
-  background: #ddd;
+  background: #90e0ef;
 }
 
 /* When clicked on, add a background color and strike out text */
 ul li.checked {
-  background: #888;
+  background: #48cae4;
   color: #fff;
   text-decoration: line-through;
 }
@@ -71,15 +92,15 @@ ul li.checked::before {
 }
 
 .close:hover {
-  background-color: #f44336;
-  color: white;
+  background-color: #FFCEFF;
+  color: whitesmoke;
 }
 
 /* Style the header */
 .header {
-  background-color: #f44336;
+  background-color: #1D1E18;
   padding: 30px 40px;
-  color: white;
+  color: whitesmoke;
   text-align: center;
 }
 
@@ -92,6 +113,7 @@ ul li.checked::before {
 
 /* Style the input */
 input {
+  background-color: whitesmoke;
   margin: 0;
   border: none;
   border-radius: 0;
@@ -103,9 +125,10 @@ input {
 
 /* Style the "Add" button */
 .addBtn {
+  margin: 0;
   padding: 10px;
   width: 25%;
-  background: #d9d9d9;
+  background: #00b4d8;
   color: #555;
   float: left;
   text-align: center;
@@ -116,5 +139,5 @@ input {
 }
 
 .addBtn:hover {
-  background-color: #bbb;
+  background-color: #90e0ef;
 }
