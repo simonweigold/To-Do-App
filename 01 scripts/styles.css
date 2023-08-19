@@ -43,7 +43,7 @@
 /* Style page content */
 .main {
   margin-left: 160px; /* Same as the width of the sidebar */
-  padding: 0px 10px;
+  padding: 0px 10px 0pc 10px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
@@ -74,6 +74,9 @@ body {
 ul {
   margin: 0;
   padding: 0;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* Style the list items */
@@ -81,9 +84,10 @@ ul li {
   cursor: pointer;
   position: relative;
   padding: 12px 8px 12px 40px;
+  margin: 10px;
   list-style-type: none;
-  background: #caf0f8;
-  font-size: 18px;
+  background: whitesmoke;
+  font-size: 16px;
   transition: 0.2s;
   
   /* make the list items unselectable */
@@ -91,23 +95,16 @@ ul li {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-
-  /* add borders to list items
-  border-width: 2px;
-  border-style: dashed;
-  border-color: black;
-  padding: 10px; /* /* Reduce padding space within the element */
-  margin: 10px; /* Reduce margin space around the element */
 }
 
 /* Set all odd list items to a different color (zebra-stripes) */
-ul li:nth-child(odd) {
+/*ul li:nth-child(odd) {
   background: #caf0f8;
-}
+}*/
 
 /* Darker background-color on hover */
 ul li:hover {
-  background: #90e0ef;
+  background: #caf0f8;
 }
 
 /* When clicked on, add a background color and strike out text */
@@ -146,10 +143,12 @@ ul li.checked::before {
 
 /* Style the header */
 .header {
+  /*display: flex;
+  justify-content: center;
+  max-width: 800px;*/
   text-align: center;
-  width: 100%;
   background-color: #1D1E18;
-  padding: 30px 40px;
+  padding: 50px 350px 10px 350px;
   color: whitesmoke;
 }
 
@@ -163,21 +162,18 @@ ul li.checked::before {
 /* Style the input */
 input[type=text] {
   text-align: center;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
   background-color: whitesmoke;
-  margin: 0;
   border: none;
   border-radius: 0;
   width: 75%;
   padding: 10px;
   float: left;
   font-size: 16px;
+  font-family: monospace;
 }
 
 /* Style the "Add" button */
 .addBtn {
-  margin: 0;
   padding: 10px;
   width: 25%;
   background: #00b4d8;
@@ -185,6 +181,7 @@ input[type=text] {
   float: left;
   text-align: center;
   font-size: 16px;
+  font-family: monospace;
   cursor: pointer;
   transition: 0.3s;
   border-radius: 0;

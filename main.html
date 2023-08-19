@@ -1,6 +1,7 @@
 <!--
     https://www.w3schools.com/howto/howto_js_todolist.asp
     https://www.educative.io/answers/how-to-create-a-simple-to-do-list-with-html-css-and-js
+    https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp
 -->
 <!DOCTYPE html>
 <html>
@@ -24,7 +25,7 @@
 
 <!-- Page content -->
   <div id="myDIV" class="header">
-    <h2 >Hello friend</h2>
+    <h2 >Hello friend &#128378</h2>
     <input type="text" id="myInput" placeholder="I have to ...">
     <span onclick="newElement()" class="addBtn">Add</span>
   </div>
@@ -97,6 +98,19 @@ function newElement() {
     }
   }
 }
+
+// Trigger 'Add' Button when pressing Enter
+var inputValue = document.getElementById("myInput").value;
+// Execute a function when the user presses a key on the keyboard
+input.addEventListener("keypress", function(event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("myBtn").click();
+  }
+}); 
 </script>
 
 </body>
